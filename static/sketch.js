@@ -7,6 +7,8 @@ function setup() {
     model = ml5.imageClassifier('MobileNet', () => {
         console.log("Model Ready")
     })
+    document.getElementById("load").disabled = true;
+    document.getElementById("pred-Button").disabled = true;
     file = document.getElementById("file-upload")
     file.addEventListener('change', () => {
         fileItem = file.files[0];
@@ -19,7 +21,11 @@ function setup() {
         }
         img = URL.createObjectURL(fileItem)
         console.log("in Setup ", img.length)
+
+        document.getElementById("load").disabled = false;
+        document.getElementById("pred-Button").disabled = false;
     })
+
 
 }
 

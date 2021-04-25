@@ -33,10 +33,10 @@
                     </div> 
                 </label>
                 <input id="file-upload" type="file" accept="image/*" />
-                <button class="mx-4 focus:bg-red-500 focus:outline-none shadow-2xl font-bold py-1 px-4 rounded-full border-solid border-2 border-white transition duration-500 ease-in-out bg-red-300 hover:bg-red-400 transform hover:-translate-y-1 hover:scale-110" id="load"
+                <button id="load" class="mx-4 focus:bg-red-500 focus:outline-none shadow-2xl font-bold py-1 px-4 rounded-full border-solid border-2 border-white transition duration-500 ease-in-out bg-red-300 hover:bg-red-400 transform hover:-translate-y-1 hover:scale-110"
                     onclick="loadImg()"><span class="font-mono text-gray-600 ">Load</span></button>
             </div>
-            <button onclick="predict()" class="mt-8 focus:bg-red-500 focus:outline-none shadow-2xl font-bold py-1 px-5 rounded-full border-solid border-2 border-white transition duration-500 ease-in-out bg-red-300 hover:bg-red-400 transform hover:-translate-y-1 hover:scale-110">
+            <button onclick="predict()" id="pred-Button" class="mt-8 focus:bg-red-500 focus:outline-none shadow-2xl font-bold py-1 px-5 rounded-full border-solid border-2 border-white transition duration-500 ease-in-out bg-red-300 hover:bg-red-400 transform hover:-translate-y-1 hover:scale-110">
                 <span class="font-mono text-gray-600">Predict ;)</span>
             </button>
             <div class="my-16 mx-1 ">
