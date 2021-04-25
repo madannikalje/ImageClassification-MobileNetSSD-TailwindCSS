@@ -11,9 +11,13 @@
     <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='css-loader.css')}}">
+
+
 </head>
 
 <body class="bg-yellow-200">
+    <div id="preload_anim" class="loader loader-curtain is-active"></div>
     <div class="text-center mt-10 ">
         <h1 class="font-mono text-gray-400 text-2xl">Apex-Beast</h1>
     </div>

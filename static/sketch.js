@@ -6,6 +6,7 @@ let fileItem;
 function setup() {
     model = ml5.imageClassifier('MobileNet', () => {
         console.log("Model Ready")
+        document.getElementById("preload_anim").setAttribute("class", "")
     })
     document.getElementById("load").disabled = true;
     document.getElementById("pred-Button").disabled = true;
